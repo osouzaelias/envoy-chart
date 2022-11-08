@@ -1,4 +1,4 @@
-replicaCount: 2
+replicaCount: 1
 
 podDisruptionBudget: |
   maxUnavailable: 1
@@ -14,7 +14,7 @@ strategy: |
 
 image:
   repository: envoyproxy/envoy
-  tag: v1.24.0
+  tag: v1.11.1
   pullPolicy: IfNotPresent
 
 command:
